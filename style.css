@@ -7,20 +7,29 @@
 }
 
 body{
-    background: rgb(90, 47, 54);
-    color: #fff;
+    background: rgb(7, 7, 7);
+    background-image: url(/images);
+    color: #f1eeee;
 }
 
+.logowrap img{
+    width: 100%;
+    height: 50px;
+}
+
+
 a{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     text-decoration: none;
-    color: #fff;
+    transition: 0.4s;
+    color: #044d34;
 }
 li{
     list-style: none;
 }
 
 nav{
-    background: #211111;
+    background: #f3f3f3;
     padding: 1rem 4rem;
     display: flex;
     align-items: center;
@@ -60,27 +69,35 @@ nav ul li a:hover{
 .fa-bars{
     font-size: 24px;
     cursor: pointer;
+    color: #000;
 }
 .hero-section{
-    height: calc(100vh - 80px);
+    height: calc(80vh - 60px);
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 100px 4rem;
+    background-image: url(/images/bg.4.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .hero-section .left{
     width: 50%;
 }
+.hero-section h1{
+    color: #0f0101;
+}
 
 .hero-section .left p{
     font-size: 18px;
-    color: #888;
+    color: #044d34;
     padding-block: 20px;
 }
 
 .hero-section .left a{
     font-weight: 600;
+    color: #eee;
 }
 
 .btn{
@@ -99,7 +116,7 @@ nav ul li a:hover{
 }
 
 .hero-section .right img{
-    width: 100%;
+    width: 70%;
 }
 
 #menuSection{
@@ -109,6 +126,7 @@ nav ul li a:hover{
 #menuSection h2{
     text-align: center;
     font-size: 28px;
+    color: #eee;
 }
 
 .menu-container{
@@ -205,8 +223,9 @@ nav ul li a:hover{
 .testimonial img{
     width: 120px;
     height: 120px;
+    object-fit:contain;
     border-radius: 50%;
-    background: #000;
+    background: #eee;
 }
 
 .testimonial p{
@@ -216,7 +235,7 @@ nav ul li a:hover{
 
 footer{
     padding: 40px 4rem;
-    background: #000;
+    background: #022b0b;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -251,7 +270,7 @@ footer{
         top: 80px;
         left:0;
         right: 0;
-        background: #211111;
+        background: #d1cbcb;
         flex-direction: column;
         overflow: hidden;
         transition: max-height 0.5s;
